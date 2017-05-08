@@ -1,6 +1,7 @@
 .htaccess.sample
 .modgit/
 .modman/
+app/*.*
 app/code/community/Phoenix/Moneybookers/
 app/code/community/Cm/RedisSession/
 app/code/core/
@@ -101,4 +102,5 @@ skin/frontend/default/iphone/
 skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
+vendor/
 var/
