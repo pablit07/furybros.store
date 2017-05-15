@@ -1,1 +1,0 @@
-/var/www/html/ecommerce/lib/web/requirejs/domReady.js
