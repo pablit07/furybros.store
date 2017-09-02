@@ -30,7 +30,8 @@
         "magento/module-swatches-sample-data": "100.1.*",
         "magento/sample-data-media": "100.1.*",
         "magento/module-offline-shipping-sample-data": "100.1.*",
-        "mage2pro/stripe": "*"
+        "mage2pro/stripe": "1.9.15",
+        "mage2pro/core": "2.6.23"
     },
     "require-dev": {
         "phpunit/phpunit": "4.1.0",
@@ -68,12 +69,16 @@
     },
     "minimum-stability": "alpha",
     "prefer-stable": true,
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://repo.magento.com/"
+        },
+        "aschroder": {
+            "type": "vcs",
+            "url": "https://github.com/aschroder/Magento-SMTP-Pro-Email-Extension.git"
         }
-    ],
+    },
     "extra": {
         "magento-force": "override"
     }

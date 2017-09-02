@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceContainer name="after.body.start">
+    		<block class="Magento\Framework\View\Element\Template" before="-" name="mobile.nav" template="Magento_Theme::mobile-nav.phtml"/>
+    		<block class="Magento\Framework\View\Element\Template" before="-" name="topbar" template="Magento_Theme::topbar.phtml"/>
+		</referenceContainer>
+    	<referenceContainer name="header.container" htmlClass="page-header main-header header-split menu-calculated"/>
+		<referenceBlock name="breadcrumbs" remove="true" />
+ 		<referenceBlock name="header.panel.wrapper" remove="true"/>
+ 		<referenceBlock name="top.search" remove="true"/>
+    </body>
+</page>

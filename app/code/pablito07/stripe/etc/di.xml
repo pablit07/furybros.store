@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Payment Method Facade configuration -->
+<virtualType name="TestFacade" type="pablit07\stripe\Model\Method\Adapter">
+    <arguments>
+        <argument name="code" xsi:type="const">Magento\Braintree\Model\Ui\ConfigProvider::CODE</argument>
+        <argument name="formBlockType" xsi:type="string">Magento\Braintree\Block\Form</argument>
+        <argument name="infoBlockType" xsi:type="string">Magento\Braintree\Block\Info</argument>
+        <argument name="valueHandlerPool" xsi:type="object">BraintreeValueHandlerPool</argument>
+        <argument name="validatorPool" xsi:type="object">BraintreeValidatorPool</argument>
+        <argument name="commandPool" xsi:type="object">BraintreeCommandPool</argument>
+    </arguments>
+</virtualType>
+
+</config>
