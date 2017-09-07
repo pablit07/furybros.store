@@ -1,0 +1,28 @@
+{
+    "name": "mageside/module-custom-shipping-price",
+    "authors": [
+        {
+            "name": "Mageside",
+            "email": "extensions@mageside.com",
+            "homepage": "https://mageside.com/"
+        }
+    ],
+    "description": "",
+    "type": "magento2-module",
+    "version": "1.0.3",
+    "license": [
+        "MS-LICENSE.txt"
+    ],
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/framework": "100.0.*|100.1.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mageside\\CustomShippingPrice\\": ""
+        }
+    }
+}
